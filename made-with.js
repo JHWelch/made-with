@@ -1,7 +1,7 @@
 const emojis = [
-  '❤', '🍜', '🍕', '🍔', '🦇', '🎃', '👻', '🍬', '🐱', '🐶', '👽', '🚀', '👾'
+  '❤️', '🍜', '🍕', '🍔', '🦇', '🎃', '👻', '🍬', '🐱', '🐶', '👽', '🚀', '👾'
 ];
-let firstEmoji = '❤';
+let firstEmoji = '❤️';
 
 function init(firstInit = true, groups = 1, duration = 1) {
   const spinner = document.querySelector('#spinner');
