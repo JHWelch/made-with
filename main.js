@@ -2,17 +2,17 @@ import './style.css'
 import { init } from './made-with.js'
 
 document.querySelector('#made-with').innerHTML = `
-  <div class="custom-flex-container">
+  <div class="mw-wrapper">
     <span>Made with </span>
 
-    <div id="spinner" class="custom-spinner">
-      <button id="emojis" class="custom-button"></button>
+    <div id="spinner" class="mw-spinner">
+      <button id="emojis" class="mw-button"></button>
     </div>
 
     <span>
       in Chicago by
 
-      <a class="custom-link" href="https://www.jordanwelch.com">Jordan Welch</a>
+      <a class="mw-link" href="https://www.jordanwelch.com">Jordan Welch</a>
     </span>
   </div>
 `
