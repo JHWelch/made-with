@@ -1,24 +1,19 @@
 import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+import { init } from './made-with.js'
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
+document.querySelector('#made-with').innerHTML = `
+  <div class="custom-flex-container">
+    <span>Made with </span>
+
+    <div id="spinner" class="custom-spinner">
+      <button id="emojis" class="custom-button"></button>
     </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
+
+    <span>
+      in Chicago by
+      <a class="custom-link" href="https://www.jordanwelch.com">Jordan Welch</a>
+    </span>
   </div>
 `
 
-setupCounter(document.querySelector('#counter'))
+init()
