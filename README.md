@@ -1,5 +1,7 @@
 # @jhwelch/made-with
 
+<a href="https://npmjs.com/package/@jhwelch/made-with"><img src="https://img.shields.io/npm/v/@jhwelch/made-with.svg" alt="npm package"></a>
+
 Simple JavaScript library to add Jordan's "Made With" spinner.
 
 Currently not customizable, but will be in the future.
