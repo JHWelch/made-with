@@ -1,0 +1,22 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`should render the made-with component 1`] = `
+Document {
+  "defaultView": [Object],
+  "location": Location {
+    "assign": [Function],
+    "hash": "",
+    "host": "localhost:3000",
+    "hostname": "localhost",
+    "href": "http://localhost:3000/",
+    "origin": "http://localhost:3000",
+    "pathname": "/",
+    "port": "3000",
+    "protocol": "http:",
+    "reload": [Function],
+    "replace": [Function],
+    "search": "",
+    "toString": [Function],
+  },
+}
+`;
