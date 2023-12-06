@@ -11,6 +11,7 @@ document.querySelector('#made-with').innerHTML = `
 
     <span>
       in Chicago by
+
       <a class="custom-link" href="https://www.jordanwelch.com">Jordan Welch</a>
     </span>
   </div>
