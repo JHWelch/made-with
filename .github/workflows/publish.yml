@@ -43,6 +43,7 @@ jobs:
       with:
         token: ${{ secrets.GH_RELEASE_PAT }}
         branch: main
+        tags: true
         unprotect_reviews: true
 
     - name: Build
