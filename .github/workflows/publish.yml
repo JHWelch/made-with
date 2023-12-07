@@ -1,4 +1,4 @@
-name: Publish to Stores
+name: Publish to NPM
 
 on:
   workflow_dispatch:
@@ -64,7 +64,4 @@ jobs:
         zip -r release.zip dist
 
     - name: Create GitHub release
-      run: |
-        mv chrome/release.zip chrome-release.zip
-        mv firefox/release.zip firefox-release.xpi
-        gh release create {{ env.version }} --title "Store Release {{ env.version }}" --generate-notes release.zip
+      run: gh release create {{ env.version }} --title "Store Release {{ env.version }}" --generate-notes release.zip
