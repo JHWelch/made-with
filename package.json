@@ -1,6 +1,6 @@
 {
   "name": "@jhwelch/made-with",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Fun footer for Jordan's applications",
   "type": "module",
   "scripts": {
