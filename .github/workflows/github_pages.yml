@@ -1,0 +1,39 @@
+name: Deploy GitHub Pages
+on:
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  gh-pages:
+    name: Deploy GitHub Pages
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
+    - name: Install Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18.18.0'
+        cache: npm
+
+    - name: Build
+      run: |
+        npm ci
+        npm run build
+
+    - name: Commit changes
+      run: |
+        git config --global user.name ${{ github.actor }}
+        git config --global user.email ${{ github.actor }}@users.noreply.github.com
+        rm -rf .gitignore
+        git add dist
+        git checkout -b gh-pages
+        git commit -m "Update demo"
+        git push origin gh-pages
